@@ -65,7 +65,8 @@
 
 ## 🖥️ Screenshot
 
-> https://www.hdry.pw/mikhmonss.png
+> 
+![Screenshot](https://www.hdry.pw/mikhmonss.png)
 
 ---
 
