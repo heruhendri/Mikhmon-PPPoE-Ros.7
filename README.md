@@ -69,7 +69,7 @@
 ## 🖥️ Screenshot
 
 > 
-![Screenshot](https://www.hdry.pw/mikhmonss.png)
+![Screenshot](https://github.com/heruhendri/Mikhmon-PPPoE-Ros.7/blob/master/mikhmon/ss.png?raw=true)
 
 ---
 
