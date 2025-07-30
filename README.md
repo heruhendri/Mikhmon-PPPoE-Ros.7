@@ -37,6 +37,128 @@
 
 ## 🚀 Instalasi
 
+**cara install Mikhmon di VPS Ubuntu** (misalnya Ubuntu 20.04 atau 22.04):
+
+---
+
+### ✅ **1. Update Sistem**
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+---
+
+### ✅ **2. Install Apache, PHP, dan Modul Pendukung**
+
+```bash
+sudo apt install apache2 php php-curl php-cli php-xml php-mbstring unzip git -y
+```
+
+---
+
+### ✅ **3. Download Mikhmon**
+
+Kita akan clone versi **Mikhmon-mod** (lebih stabil dan aktif di-maintain):
+
+```bash
+cd /var/www/
+sudo git clone https://github.com/heruhendri/Mikhmon-PPPoE-Ros.7.git mikhmon
+```
+
+> Atau jika mau versi original:
+>
+> ```bash
+> sudo git clone https://github.com/laksa19/mikhmon.git mikhmon
+> ```
+
+---
+
+### ✅ **4. Ubah Hak Akses Folder**
+
+```bash
+sudo chown -R www-data:www-data /var/www/mikhmon
+sudo chmod -R 755 /var/www/mikhmon
+```
+
+---
+
+### ✅ **5. Konfigurasi Apache**
+
+Buat virtual host:
+
+```bash
+sudo nano /etc/apache2/sites-available/mikhmon.conf
+```
+
+Isi dengan:
+
+```apache
+<VirtualHost *:80>
+    ServerAdmin admin@yourdomain.com
+    DocumentRoot /var/www/mikhmon
+    ServerName yourdomain.com
+
+    <Directory /var/www/mikhmon>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/mikhmon_error.log
+    CustomLog ${APACHE_LOG_DIR}/mikhmon_access.log combined
+</VirtualHost>
+```
+
+> Ganti `yourdomain.com` dengan domain kamu, atau hapus `ServerName` jika hanya pakai IP VPS.
+
+---
+
+### ✅ **6. Aktifkan Site dan Restart Apache**
+
+```bash
+sudo a2ensite mikhmon
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+```
+
+---
+
+### ✅ **7. Akses Mikhmon**
+
+Buka browser dan akses:
+
+* Jika pakai domain: `http://yourdomain.com`
+* Jika pakai IP VPS: `http://IP-VPS-ANDA`
+
+---
+
+### ✅ (Opsional) **Pasang SSL (HTTPS)**
+
+Jika kamu menggunakan domain:
+
+```bash
+sudo apt install certbot python3-certbot-apache -y
+sudo certbot --apache
+```
+
+---
+
+### ✅ **8. Login Mikhmon**
+
+Default login:
+
+* **Username:** `admin`
+* **Password:** `admin`
+
+Langsung bisa mulai tambahkan Router Mikrotik kamu dari halaman dashboard.
+
+---
+
+Kalau kamu ingin auto-start dan tanpa terminal, bisa juga pakai versi **Mikhmon Desktop atau Docker**, tinggal disesuaikan saja.
+
+
+
 ### Prasyarat
 
 - Webserver (Apache/Nginx)
