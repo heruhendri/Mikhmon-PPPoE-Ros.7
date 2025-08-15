@@ -34,7 +34,7 @@
   Akses login untuk admin, serta log aktivitas.
 
 ---
-## 🚀 Instalasi 1
+## 🚀 Instalasi 1 NAT VPS
 
 **cara install Mikhmon di NAT VPS** (misalnya Ubuntu 20.04 atau 22.04):
 Oke, saya jelasin step-by-step cara install **Mikhmon** di **NAT VPS** ya, karena NAT VPS itu biasanya nggak punya IP publik langsung, jadi nanti kita perlu sedikit trik untuk mengaksesnya dari luar.
@@ -169,7 +169,7 @@ Lalu ikuti wizard setup Mikhmon.
 
 
 
-## 🚀 Instalasi 2
+## 🚀 Instalasi 2 Ubuntu 20.04 atau 22.04
 
 **cara install Mikhmon di VPS Ubuntu** (misalnya Ubuntu 20.04 atau 22.04):
 
