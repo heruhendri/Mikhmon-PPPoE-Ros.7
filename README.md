@@ -54,7 +54,7 @@
 ## 📌 Instalasi dengan Simple bisa menggunakan script [Script Auto Instaler Mikhmon](https://github.com/heruhendri/Mikhmon-PPPoE-Ros.7/tree/installer)
 
 ```bash
-wget -O installer-mikhmon.sh hhttps://raw.githubusercontent.com/heruhendri/Mikhmon-PPPoE-Ros.7/refs/heads/installer/installer-mikhmon-sh
+wget -O installer-mikhmon.sh https://raw.githubusercontent.com/heruhendri/Mikhmon-PPPoE-Ros.7/refs/heads/installer/installer-mikhmon-sh
 chmod +x installer-mikhmon.sh
 ./installer-mikhmon.sh
 ```
