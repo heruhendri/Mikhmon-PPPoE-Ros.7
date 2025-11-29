@@ -51,7 +51,14 @@
 
 ---
 
-## 😊 Instalasi dengan Simple bisa menggunakan script [auto instaler mikhmon](https://github.com/heruhendri/Installer-Mikhmon-VPS)
+## 📌 Instalasi dengan Simple bisa menggunakan script [Script Auto Instaler Mikhmon](https://github.com/heruhendri/Mikhmon-PPPoE-Ros.7/tree/installer)
+
+```bash
+wget -O installer-mikhmon.sh https://raw.githubusercontent.com/heruhendri/Mikhmon-PPPoE-Ros.7/installer/installer-mikhmon.sh
+chmod +x installer-mikhmon.sh
+./installer-mikhmon.sh
+```
+---
 
 ## ⚙️ Opsi Instalasi 2 (Menggunakan Domain Https Cloudflare)
 **multi-instal Mikhmon HTTPS di NAT VPS**
