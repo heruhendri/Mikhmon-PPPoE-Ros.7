@@ -39,7 +39,7 @@
 ## 🖥️ Screenshot
 
 > 
-![Screenshot](https://github.com/heruhendri/Mikhmon-PPPoE-Ros.7/blob/master/mikhmon/ss.png?raw=true)
+![Screenshot](https://raw.githubusercontent.com/heruhendri/Mikhmon-PPPoE-Ros.7/refs/heads/master/ss.png)
 
 ---
 
